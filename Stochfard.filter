@@ -1,0 +1,2324 @@
+#===============================================================================================================
+# Stochfard's simple Loot Filter - for Path of Exile 2
+#===============================================================================================================
+# VERSION:  0.1.4.2024.12.08
+# GAMEVERSION:  0.1.0
+# AUTHOR:   Stochfard
+
+# Add yours chase items here
+
+# Quest items
+	Show
+		Class == "Quest Items"
+		MinimapIcon 0 Green Pentagon
+
+# Unique items
+	Show
+		Rarity == Unique
+
+# Currency
+	Show
+		Class == "Currency"
+		BaseType == "Mirror of Kalandra" "Divine Orb" "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Perfect Jeweller's Orb"
+		SetFontSize 45
+		SetTextColor 255 0 0 255
+		SetBorderColor 255 0 0 255
+		SetBackgroundColor 255 255 255 255
+		PlayAlertSound 6 300
+		PlayEffect Red
+		MinimapIcon 0 Red Star
+
+	Show
+		Class == "Currency"
+		BaseType == "Chaos Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Exalted Orb" "Artificer's Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher" "Glassblower's Bauble" "Gemcutter's Prism" "Lesser Jeweller's Orb"
+		SetFontSize 45
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 249 150 25 255
+		PlayAlertSound 2 300
+		PlayEffect White
+		MinimapIcon 2 White Circle
+
+# Relic
+	Show 
+		Class == "Trial Coins" "Inscribed Ultimatum"
+		SetFontSize 40
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 187 0 168 255
+		PlayAlertSound 2 300
+		PlayEffect White
+		MinimapIcon 2 White Circle
+
+# Runes
+	Show
+		Class == "Socketable"
+		SetFontSize 40
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 64 180 255 255
+
+# Gems 
+	Show
+		BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+		SetFontSize 40
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 150 240 150 255
+
+# Essences
+	Show 
+		Class == "Stackable Currency"
+		BaseType "Essence of"
+		SetFontSize 40
+		SetTextColor 0 0 0 255
+		SetBorderColor 0 0 0 255
+		SetBackgroundColor 200 130 240 255
+
+# Cheep Currency and Currency shards
+	Show
+		Class == "Currency"
+
+    
+# Waystones
+	Show 
+		BaseType "Waystone"
+
+# Jewels
+	Show	
+		BaseType "Jewel"
+		SetBorderColor 200 200 70 150
+
+# Charms
+	Show
+		BaseType "Charm"
+		SetFontSize 35
+		SetTextColor 240 170 240 255
+
+# Flasks
+# Lesser - ilvl 0 
+# Medium - ilvl 6
+# Greater - ilvl 10
+# Grand - ilvl 16
+# Giant - ilvl 23
+# Colossal - ilvl 30
+# Gargantuan - ilvl 40 
+# Transcendent - ilvl 50
+# Ultimate - ilvl 60
+
+#Show best possible flask
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Lesser"
+		ItemLevel < 6
+		SetBorderColor 255 70 70 255
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Medium"
+		ItemLevel < 10
+		SetBorderColor 255 70 70 255
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Greater"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Grand"
+		ItemLevel < 23
+		SetBorderColor 255 70 70 255
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Giant"
+		ItemLevel < 30
+		SetBorderColor 255 70 70 255
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Colossal"
+		ItemLevel < 40
+		SetBorderColor 255 70 70 255
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Gargantuan"
+		ItemLevel < 50
+		SetBorderColor 255 70 70 255
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Transcendent"
+		ItemLevel < 60
+		SetBorderColor 255 70 70 255
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Ultimate"
+		SetBorderColor 255 70 70 255
+
+#Show second best possible flask
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Lesser"
+		ItemLevel < 10
+		SetBorderColor 200 200 70 150
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Medium"
+		ItemLevel < 16
+		SetBorderColor 200 200 70 150
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Greater"
+		ItemLevel < 23
+		SetBorderColor 200 200 70 150
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Grand"
+		ItemLevel < 30
+		SetBorderColor 200 200 70 150
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Giant"
+		ItemLevel < 40
+		SetBorderColor 200 200 70 150
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Colossal"
+		ItemLevel < 50
+		SetBorderColor 200 200 70 150
+
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Gargantuan"
+		ItemLevel < 60
+		SetBorderColor 200 200 70 150
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Transcendent"
+		SetBorderColor 200 200 70 150
+
+#Show bad flask bases
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Lesser"
+		ItemLevel >= 10
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+		
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Medium"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Greater"
+		ItemLevel >= 23
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Grand"
+		ItemLevel >= 30
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Giant"
+		ItemLevel >= 40
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Colossal"
+		ItemLevel >= 50
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		Class == "Life Flasks" "Mana Flasks"
+		BaseType "Gargantuan"
+		ItemLevel >= 60
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+# Items all unreleased content taken from poe2db
+	# Salvage bases
+
+	Show	
+		Sockets == "S"
+		SetBorderColor 255 162 210 255
+
+	Show	
+		Sockets == "SS"
+		SetBorderColor 255 162 210 255
+
+
+	Show	
+		Quality >= 10
+		SetBorderColor 255 162 210 255
+
+	Show	
+		Quality >= 5
+		SetBorderColor 255 162 248 255
+
+	Show	
+		Quality >= 1
+		SetBorderColor 255 162 248 255
+
+# Amulets 
+	Show
+		BaseType == "Crimson Amulet" "Azure Amulet"
+		ItemLevel < 25
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet"
+		ItemLevel < 40
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+		ItemLevel < 60
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Crimson Amulet" "Azure Amulet"
+		ItemLevel < 40
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet"
+		ItemLevel < 60
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+		ItemLevel < 75
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Crimson Amulet" "Azure Amulet"
+		ItemLevel >= 40
+		SetBorderColor 255 255 255 180
+
+	Show
+		BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet"
+		ItemLevel >= 60
+		SetBorderColor 255 255 255 180
+
+	Show
+		BaseType == "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+		ItemLevel >= 75
+		SetBorderColor 255 255 255 180
+
+# Rings
+	Show
+		BaseType == "Iron Ring" "Lazuli Ring"
+		ItemLevel < 25
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Ruby Ring" "Topaz Ring" "Sapphire Ring"
+		ItemLevel < 40
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+		ItemLevel < 60
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Breach Ring"
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Iron Ring" "Lazuli Ring"
+		ItemLevel < 40
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Ruby Ring" "Topaz Ring" "Sapphire Ring"
+		ItemLevel < 60
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+		ItemLevel < 75
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Iron Ring" "Lazuli Ring"
+		ItemLevel >= 40
+		SetBorderColor 255 255 255 180
+
+	Show
+		BaseType == "Ruby Ring" "Topaz Ring" "Sapphire Ring"
+		ItemLevel >= 60
+		SetBorderColor 255 255 255 180
+
+	Show
+		BaseType == "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+		ItemLevel >= 75
+		SetBorderColor 255 255 255 180
+# Belts
+	Show
+		BaseType == "Rawhide Belt" "Linen Belt"
+		ItemLevel < 25
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Wide Belt" "Long Belt"  "Ornate Belt" "Mail Belt" "Mail Belt" "Double Belt" "Heavy Belt" 
+		ItemLevel < 50
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType ==  "Utility Belt" "Fine Belt" "Plate Belt"
+		ItemLevel < 75
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Rawhide Belt" "Linen Belt"
+		ItemLevel < 50
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Wide Belt" "Long Belt"  "Ornate Belt" "Mail Belt" "Mail Belt" "Double Belt" "Heavy Belt" 
+		ItemLevel < 75
+		SetBorderColor 200 200 70 150
+
+	Show
+		BaseType == "Rawhide Belt" "Linen Belt"
+		ItemLevel >= 50
+		SetBorderColor 255 255 255 180
+
+	Show
+		BaseType == "Wide Belt" "Long Belt"  "Ornate Belt" "Mail Belt" "Mail Belt" "Double Belt" "Heavy Belt" 
+		ItemLevel >= 75
+		SetBorderColor 255 255 255 180
+
+# Rod
+	Show
+		Class == "Fishing Rod" "Fishing Rods"
+		SetFontSize 45
+		SetTextColor 255 0 0 255
+		SetBorderColor 255 0 0 255
+		SetBackgroundColor 255 255 255 255
+		PlayAlertSound 6 300
+		PlayEffect Red
+		MinimapIcon 0 Red Star
+
+#Shrine Sceptre
+	Show	
+		BaseType "Shrine Sceptre"
+		SetBorderColor 200 200 70 150
+
+# Best bases
+	Show
+		BaseType == "Crude Bow"
+		ItemLevel < 5
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Shortbow"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Warden Bow"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Recurve Bow"
+		ItemLevel < 22
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Composite Bow"
+		ItemLevel < 28
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Dualstring Bow"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Cultist Bow"
+		ItemLevel < 39
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Zealot Bow"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Artillery Bow"
+		ItemLevel < 48
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Shortbow"
+		ItemLevel < 48
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Warden Bow"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Tribal Bow"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Composite Bow"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Greatbow"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Dualstring Bow"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Double Limb Bow"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Cultist Bow"
+		ItemLevel < 62
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Zealot Bow"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Heavy Bow"
+		ItemLevel < 67
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Shortbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Composite Bow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Warden Bow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Zealot Bow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Dualstring Bow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Cultist Bow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Wrapped Quarterstaff"
+		ItemLevel < 4
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Long Quarterstaff"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Gothic Quarterstaff"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Crackling Quarterstaff"
+		ItemLevel < 20
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Crescent Quarterstaff"
+		ItemLevel < 28
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Steelpoint Quarterstaff"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Slicing Quarterstaff"
+		ItemLevel < 37
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Barrier Quarterstaff"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Hefty Quarterstaff"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Long Quarterstaff"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Smooth Quarterstaff"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Gothic Quarterstaff"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Crackling Quarterstaff"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Anima Quarterstaff"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Crescent Quarterstaff"
+		ItemLevel < 56
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Graceful Quarterstaff"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Slicing Quarterstaff"
+		ItemLevel < 62
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Barrier Quarterstaff"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Wyrm Quarterstaff"
+		ItemLevel < 67
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Gothic Quarterstaff"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Crescent Quarterstaff"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Long Quarterstaff"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Crackling Quarterstaff"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Barrier Quarterstaff"
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Withered Wand"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Bone Wand"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Attuned Wand"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Siphoning Wand"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Volatile Wand"
+		ItemLevel < 25
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Galvanic Wand"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Acrid Wand"
+		ItemLevel < 38
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Offering Wand"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Frigid Wand"
+		ItemLevel < 49
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Torture Wand"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Critical Wand"
+		ItemLevel < 56
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Primordial Wand"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Dueling Wand"
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Wooden Club"
+		ItemLevel < 4
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Smithing Hammer"
+		ItemLevel < 10
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Slim Mace"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Spiked Club"
+		ItemLevel < 22
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Warpick"
+		ItemLevel < 26
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Plated Mace"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Brigand Mace"
+		ItemLevel < 36
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Construct Hammer"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Morning Star"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Smithing Hammer"
+		ItemLevel < 48
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Jade Club"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Slim Mace"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Warpick"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Lumen Mace"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Execratus Hammer"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Plated Mace"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Brigand Mace"
+		ItemLevel < 62
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Construct Hammer"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Torment Club"
+		ItemLevel < 67
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Slim Mace"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Plated Mace"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Smithing Hammer"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Brigand Mace"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Warpick"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Construct Hammer"
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Rattling Sceptre"
+		ItemLevel < 6
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Stoic Sceptre"
+		ItemLevel < 12
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Lupine Sceptre"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Omen Sceptre"
+		ItemLevel < 21
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Ochre Sceptre"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Devouring Sceptre"
+		ItemLevel < 36
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Clasped Sceptre"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Devotional Sceptre"
+		ItemLevel < 49
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Wrath Sceptre"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Aromatic Sceptre"
+		ItemLevel < 58
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Pious Sceptre"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Hallowed Sceptre"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Ashen Staff"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Gelid Staff"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Voltaic Staff"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Spriggan Staff"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Pyrophyte Staff"
+		ItemLevel < 25
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Chiming Staff"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Rending Staff"
+		ItemLevel < 38
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Reaping Staff"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Icicle Staff"
+		ItemLevel < 49
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Roaring Staff"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Paralysing Staff"
+		ItemLevel < 56
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Cleric Staff"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Dark Staff"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Felled Greatclub"
+		ItemLevel < 4
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Oak Greathammer"
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Forge Maul"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Studded Greatclub"
+		ItemLevel < 22
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Cultist Greathammer"
+		ItemLevel < 28
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Temple Maul"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Leaden Greathammer"
+		ItemLevel < 38
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Crumbling Maul"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Pointed Maul"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Oak Greathammer"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Forge Maul"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Totemic Greatclub"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Cultist Greathammer"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Greatmace"
+		ItemLevel < 54
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Precise Greathammer"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Temple Maul"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Leaden Greathammer"
+		ItemLevel < 62
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Crumbling Maul"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Giant Maul"
+		ItemLevel < 67
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Forge Maul"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Temple Maul"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Oak Greathammer"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Leaden Greathammer"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Cultist Greathammer"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Crumbling Maul"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Makeshift Crossbow"
+		ItemLevel < 4
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Tense Crossbow"
+		ItemLevel < 10
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Sturdy Crossbow"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Varnished Crossbow"
+		ItemLevel < 20
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Dyad Crossbow"
+		ItemLevel < 26
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Alloy Crossbow"
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Bombard Crossbow"
+		ItemLevel < 38
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Construct Crossbow"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Blackfire Crossbow"
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Tense Crossbow"
+		ItemLevel < 48
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Piercing Crossbow"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Sturdy Crossbow"
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Varnished Crossbow"
+		ItemLevel < 52
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Cumbrous Crossbow"
+		ItemLevel < 55
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Dyad Crossbow"
+		ItemLevel < 56
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Dedalian Crossbow"
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Bombard Crossbow"
+		ItemLevel < 62
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Advanced Forlorn Crossbow"
+		ItemLevel < 65
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Esoteric Crossbow"
+		ItemLevel < 67
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Sturdy Crossbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Varnished Crossbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Tense Crossbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Forlorn Crossbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Dyad Crossbow"
+		SetBorderColor 255 70 70 255
+	Show
+		BaseType == "Expert Bombard Crossbow"
+		SetBorderColor 255 70 70 255
+	# Armor 
+	Show
+		BaseType == "Broadhead Quiver" "Splintered Tower Shield" "Painted Tower Shield" "Hardwood Targe" "Pelage Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Leather Buckler" "Wooden Buckler" "Twig Focus" "Woven Focus" "Antler Focus" "Stocky Mitts" "Suede Bracers" "Torn Gloves" "Ringmail Gauntlets" "Rope Cuffs" "Gauze Wraps" "Rough Greaves" "Rawhide Boots" "Straw Sandals" "Mail Sabatons" "Padded Leggings" "Frayed Shoes" "Rusted Cuirass" "Fur Plate" "Leather Vest" "Quilted Vest" "Tattered Robe" "Feathered Robe" "Chain Mail" "Pilgrim Vestments" "Pelt Mantle" "Hermit Garb" "Rusted Greathelm" "Shabby Hood" "Felt Cap" "Twig Circlet" "Wicker Tiara" "Brimmed Helm" "Iron Crown" "Horned Crown" "Hewn Mask" "Face Mask" 
+		ItemLevel < 11
+		SetBorderColor 255 70 70 255
+	
+	Show
+		BaseType == "Fire Quiver" "Braced Tower Shield" "Plated Buckler" "Riveted Mitts" "Firm Bracers" "Sombre Gloves" "Iron Greaves" "Laced Boots" "Wrapped Sandals" "Iron Cuirass" "Pathfinder Coat" "Hexer's Robe" "Rogue Armour" "Waxed Jacket" "Soldier Greathelm" "Lace Hood" "Guarded Helm"
+		ItemLevel < 16
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Sacral Quiver" "Barricade Tower Shield" "Effigial Tower Shield" "Studded Targe" "Emblem Crest Shield" "Iron Buckler" "Ridged Buckler" "Engraved Focus" "Tonal Focus" "Tempered Mitts" "Bound Bracers" "Stitched Gloves" "Layered Gauntlets" "Aged Cuffs" "Linen Wraps" "Bronze Greaves" "Embossed Boots" "Lattice Sandals" "Braced Sabatons" "Secured Leggings" "Threaded Shoes" "Raider Plate" "Maraketh Cuirass" "Shrouded Vest" "Rhoahide Coat" "Bone Raiment" "Silk Robe" "Vagabond Armour" "Mail Vestments" "Marabout Garb" "Wrapped Greathelm" "Beaded Circlet" "Visored Helm" "Cultist Crown" "Hooded Mask" 
+		ItemLevel < 26
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Two-Point Quiver" "Rampart Tower Shield" "Crescent Targe" "Jingling Crest Shield" "Spiked Buckler" "Crystal Focus" "Bolstered Mitts" "Sectioned Bracers" "Jewelled Gloves" "Trimmed Greaves" "Steeltoe Boots" "Silk Slippers" "Steel Plate" "Studded Vest" "Keth Raiment" "Cloaked Mail" "Shaman Mantle" "Wayfarer Jacket" "Spired Greathelm" "Swathed Cap" "Chain Tiara" "Cowled Helm" "Martyr Crown" "Veiled Mask" 
+		ItemLevel < 33
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Blunt Quiver" "Toxic Quiver" "Heraldric Tower Shield" "Stone Tower Shield" "Chiseled Targe" "Feathered Targe" "Sectarian Crest Shield" "Omen Crest Shield" "Ringed Buckler" "Edged Buckler" "Voodoo Focus" "Plumed Focus" "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Vaal Cuirass" "Full Plate" "Scout's Vest" "Serpentscale Coat" "Votive Raiment" "Altar Robe" "Explorer Armour" "Scale Mail" "Ironclad Vestments" "Sacrificial Mantle" "Anchorite Garb" "Scalper's Jacket" "Elite Greathelm" "Warrior Greathelm" "Hunter Hood" "Viper Cap" "Feathered Tiara" "Gold Circlet" "Shielded Helm" "Heavy Crown" "Tribal Mask" 
+		ItemLevel < 45
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Serrated Quiver" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Laminate Buckler" "Pearl Buckler" "Advanced Painted Tower Shield" "Advanced Braced Tower Shield" "Advanced Hardwood Targe" "Advanced Pelage Targe" "Advanced Blazon Crest Shield" "Advanced Sigil Crest Shield" "Advanced Wooden Buckler" "Advanced Plated Buckler" "Advanced Woven Focus" "Advanced Antler Focus" "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Diviner Cuffs" "Buckled Wraps" "Advanced Riveted Mitts" "Advanced Firm Bracers" "Advanced Sombre Gloves" "Advanced Ringmail Gauntlets" "Advanced Rope Cuffs" "Advanced Gauze Wraps" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Wrapped Sandals" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Frayed Shoes" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Scoundrel Jacket" "Advanced Fur Plate" "Advanced Iron Cuirass" "Advanced Quilted Vest" "Advanced Pathfinder Coat" "Advanced Feathered Robe" "Advanced Hexer's Robe" "Advanced Chain Mail" "Advanced Rogue Armour" "Advanced Pilgrim Vestments" "Advanced Pelt Mantle" "Advanced Hermit Garb" "Advanced Waxed Jacket" "Commander Greathelm" "Corsair Cap" "Coral Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Advanced Rusted Greathelm" "Advanced Soldier Greathelm" "Advanced Shabby Hood" "Advanced Felt Cap" "Advanced Twig Circlet" "Advanced Wicker Tiara" "Advanced Brimmed Helm" "Advanced Guarded Helm" "Advanced Iron Crown" "Advanced Horned Crown" "Advanced Hewn Mask" "Advanced Face Mask" 
+		ItemLevel < 51
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Primed Quiver" "Penetrating Quiver" "Phalanx Tower Shield" "Mosaic Targe" "Aureate Targe" "Stoic Crest Shield" "Empyreal Crest Shield" "Ornate Buckler" "Array Buckler" "Advanced Effigial Tower Shield" "Advanced Rampart Tower Shield" "Advanced Studded Targe" "Advanced Crescent Targe" "Advanced Emblem Crest Shield" "Advanced Jingling Crest Shield" "Advanced Ridged Buckler" "Advanced Spiked Buckler" "Advanced Tonal Focus" "Advanced Crystal Focus" "Titan Mitts" "Hardened Bracers" "Embroidered Gloves" "Burnished Gauntlets" "Righteous Cuffs" "Furtive Wraps" "Advanced Bolstered Mitts" "Advanced Tempered Mitts" "Advanced Bound Bracers" "Advanced Sectioned Bracers" "Advanced Stitched Gloves" "Advanced Jewelled Gloves" "Advanced Layered Gauntlets" "Advanced Aged Cuffs" "Advanced Linen Wraps" "Monument Greaves" "Leatherplate Boots" "Studded Sandals" "Flexile Sabatons" "Gilt Leggings" "Velour Shoes" "Advanced Bronze Greaves" "Advanced Trimmed Greaves" "Advanced Embossed Boots" "Advanced Steeltoe Boots" "Advanced Lattice Sandals" "Advanced Silk Slippers" "Advanced Braced Sabatons" "Advanced Secured Leggings" "Advanced Threaded Shoes" "Colosseum Plate" "Champion Cuirass" "Strider Vest" "Hardleather Coat" "Imperial Robe" "Plated Raiment" "Lamellar Mail" "Gladiator Armour" "Tideseer Mantle" "Gilded Vestments" "Venerated Mantle" "Ascetic Garb" "Clandestine Jacket" "Monastic Garb" "Advanced Maraketh Cuirass" "Advanced Steel Plate" "Advanced Rhoahide Coat" "Advanced Studded Vest" "Advanced Silk Robe" "Advanced Keth Raiment" "Advanced Vagabond Armour" "Advanced Cloaked Mail" "Advanced Mail Vestments" "Advanced Shaman Mantle" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Leatherbound Hood" "Velvet Cap" "Covert Hood" "Noble Circlet" "Twilight Tiara" "Decorated Helm" "Lavish Crown" "Shaded Mask" "Advanced Wrapped Greathelm" "Advanced Spired Greathelm" "Advanced Lace Hood" "Advanced Swathed Cap" "Advanced Beaded Circlet" "Advanced Chain Tiara" "Advanced Visored Helm" "Advanced Cowled Helm" "Advanced Cultist Crown" "Advanced Martyr Crown" "Advanced Hooded Mask" "Advanced Veiled Mask" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask"  
+		ItemLevel < 59
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Volant Quiver" "Visceral Quiver" "Defiant Tower Shield" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Advanced Heraldric Tower Shield" "Advanced Stone Tower Shield" "Advanced Chiseled Targe" "Advanced Feathered Targe" "Advanced Sectarian Crest Shield" "Advanced Omen Crest Shield" "Advanced Ringed Buckler" "Advanced Edged Buckler" "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield" "Expert Plated Buckler" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus" "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Advanced Moulded Mitts" "Advanced Spined Bracers" "Advanced Intricate Gloves" "Advanced Doubled Gauntlets" "Advanced Goldcast Cuffs" "Advanced Spiral Wraps" "Expert Riveted Mitts" "Expert Firm Bracers" "Expert Sombre Gloves" "Expert Ringmail Gauntlets" "Expert Rope Cuffs" "Expert Gauze Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Advanced Stone Greaves" "Advanced Lizardscale Boots" "Advanced Feathered Sandals" "Advanced Stacked Sabatons" "Advanced Pelt Leggings" "Advanced Hunting Shoes" "Expert Iron Greaves" "Expert Laced Boots" "Expert Wrapped Sandals" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Frayed Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Advanced Full Plate" "Advanced Vaal Cuirass" "Advanced Scout's Vest" "Advanced Serpentscale Coat" "Advanced Votive Raiment" "Advanced Altar Robe" "Advanced Explorer Armour" "Advanced Scale Mail" "Advanced Ironclad Vestments" "Advanced Sacrificial Mantle" "Advanced Anchorite Garb" "Advanced Scalper's Jacket" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Hexer's Robe" "Expert Rogue Armour" "Expert Pelt Mantle" "Expert Waxed Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Advanced Elite Greathelm" "Advanced Hunter Hood" "Advanced Feathered Tiara" "Advanced Shielded Helm" "Advanced Heavy Crown" "Advanced Tribal Mask" "Expert Soldier Greathelm" "Expert Felt Cap" 
+		ItemLevel < 70
+		SetBorderColor 255 70 70 255
+
+	Show
+		BaseType == "Expert Rampart Tower Shield" "Expert Stone Tower Shield" "Expert Crescent Targe" "Expert Feathered Targe" "Expert Jingling Crest Shield" "Expert Omen Crest Shield" "Expert Spiked Buckler" "Expert Edged Buckler" "Expert Crystal Focus" "Expert Plumed Focus" "Expert Bolstered Mitts" "Expert Moulded Mitts" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Jewelled Gloves" "Expert Intricate Gloves" "Expert Layered Gauntlets" "Expert Doubled Gauntlets" "Expert Aged Cuffs" "Expert Goldcast Cuffs" "Expert Linen Wraps" "Expert Spiral Wraps" "Expert Trimmed Greaves" "Expert Stone Greaves" "Expert Secured Leggings" "Expert Pelt Leggings" "Expert Threaded Shoes" "Expert Hunting Shoes" "Abyssal Cuirass" "Armoured Vest" "Expert Steeltoe Boots" "Expert Lizardscale Boots" "Expert Silk Slippers" "Expert Feathered Sandals" "Expert Braced Sabatons" "Expert Stacked Sabatons" "Arcane Robe" "Slayer Armour" "Zenith Vestments" "Assassin Garb" "Expert Steel Plate" "Expert Vaal Cuirass" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Keth Raiment" "Expert Altar Robe" "Expert Cloaked Mail" "Expert Scale Mail" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Wayfarer Jacket" "Expert Scalper's Jacket" "Expert Spired Greathelm" "Expert Elite Greathelm" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Chain Tiara" "Expert Feathered Tiara" "Expert Cowled Helm" "Expert Shielded Helm" "Expert Martyr Crown" "Expert Heavy Crown" "Expert Veiled Mask" "Expert Tribal Mask" 
+		SetBorderColor 255 70 70 255
+
+# Second best bases
+	Show	
+		BaseType == "Crude Bow"
+		ItemLevel < 11
+		
+	Show	
+		BaseType == "Shortbow"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Warden Bow"
+		ItemLevel < 22
+		
+	Show	
+		BaseType == "Recurve Bow"
+		ItemLevel < 28
+		
+	Show	
+		BaseType == "Composite Bow"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Dualstring Bow"
+		ItemLevel < 39
+		
+	Show	
+		BaseType == "Cultist Bow"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Zealot Bow"
+		ItemLevel < 50
+		
+	Show	
+		BaseType == "Artillery Bow"
+		ItemLevel < 50
+		
+	Show	
+		BaseType == "Advanced Shortbow"
+		ItemLevel < 50
+		
+	Show	
+		BaseType == "Advanced Warden Bow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Tribal Bow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Composite Bow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Greatbow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Dualstring Bow"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Double Limb Bow"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Cultist Bow"
+		ItemLevel < 65
+		
+	Show	
+		BaseType == "Advanced Zealot Bow"
+		ItemLevel < 67
+		
+	Show	
+		BaseType == "Heavy Bow"
+		ItemLevel < 72
+		
+
+	Show	
+		BaseType == "Wrapped Quarterstaff"
+		ItemLevel < 11
+		
+	Show	
+		BaseType == "Long Quarterstaff"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Gothic Quarterstaff"
+		ItemLevel < 20
+		
+	Show	
+		BaseType == "Crackling Quarterstaff"
+		ItemLevel < 28
+		
+	Show	
+		BaseType == "Crescent Quarterstaff"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Steelpoint Quarterstaff"
+		ItemLevel < 37
+		
+	Show	
+		BaseType == "Slicing Quarterstaff"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Barrier Quarterstaff"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Hefty Quarterstaff"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Advanced Long Quarterstaff"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Smooth Quarterstaff"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Advanced Gothic Quarterstaff"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Advanced Crackling Quarterstaff"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Anima Quarterstaff"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Crescent Quarterstaff"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Graceful Quarterstaff"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Slicing Quarterstaff"
+		ItemLevel < 65
+		
+	Show	
+		BaseType == "Advanced Barrier Quarterstaff"
+		ItemLevel < 67
+		
+	Show	
+		BaseType == "Wyrm Quarterstaff"
+		ItemLevel < 72
+		
+	
+	Show	
+		BaseType == "Withered Wand"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Bone Wand"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Attuned Wand"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Siphoning Wand"
+		ItemLevel < 25
+		
+	Show	
+		BaseType == "Volatile Wand"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Galvanic Wand"
+		ItemLevel < 38
+		
+	Show	
+		BaseType == "Acrid Wand"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Offering Wand"
+		ItemLevel < 49
+		
+	Show	
+		BaseType == "Frigid Wand"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Torture Wand"
+		ItemLevel < 56
+		
+	Show	
+		BaseType == "Critical Wand"
+		ItemLevel < 65
+		
+	
+	Show	
+		BaseType == "Wooden Club"
+		ItemLevel < 10
+		
+	Show	
+		BaseType == "Smithing Hammer"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Slim Mace"
+		ItemLevel < 22
+		
+	Show	
+		BaseType == "Spiked Club"
+		ItemLevel < 26
+		
+	Show	
+		BaseType == "Warpick"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Plated Mace"
+		ItemLevel < 36
+		
+	Show	
+		BaseType == "Brigand Mace"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Construct Hammer"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Morning Star"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Advanced Smithing Hammer"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Jade Club"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Slim Mace"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Warpick"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Lumen Mace"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Execratus Hammer"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Plated Mace"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Brigand Mace"
+		ItemLevel < 65
+		
+	Show	
+		BaseType == "Advanced Construct Hammer"
+		ItemLevel < 67
+		
+	Show	
+		BaseType == "Torment Club"
+		ItemLevel < 72
+		
+	
+	Show	
+		BaseType == "Rattling Sceptre"
+		ItemLevel < 12
+		
+	Show	
+		BaseType == "Stoic Sceptre"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Lupine Sceptre"
+		ItemLevel < 21
+		
+	Show	
+		BaseType == "Omen Sceptre"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Ochre Sceptre"
+		ItemLevel < 36
+		
+	Show	
+		BaseType == "Devouring Sceptre"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Clasped Sceptre"
+		ItemLevel < 49
+		
+	Show	
+		BaseType == "Devotional Sceptre"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Wrath Sceptre"
+		ItemLevel < 58
+		
+	Show	
+		BaseType == "Aromatic Sceptre"
+		ItemLevel < 65
+		
+	
+	Show	
+		BaseType == "Ashen Staff"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Gelid Staff"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Voltaic Staff"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Spriggan Staff"
+		ItemLevel < 25
+		
+	Show	
+		BaseType == "Pyrophyte Staff"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Chiming Staff"
+		ItemLevel < 38
+		
+	Show	
+		BaseType == "Rending Staff"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Reaping Staff"
+		ItemLevel < 49
+		
+	Show	
+		BaseType == "Icicle Staff"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Roaring Staff"
+		ItemLevel < 56
+		
+	Show	
+		BaseType == "Paralysing Staff"
+		ItemLevel < 65
+		
+	
+	Show	
+		BaseType == "Felled Greatclub"
+		ItemLevel < 11
+		
+	Show	
+		BaseType == "Oak Greathammer"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Forge Maul"
+		ItemLevel < 22
+		
+	Show	
+		BaseType == "Studded Greatclub"
+		ItemLevel < 28
+		
+	Show	
+		BaseType == "Cultist Greathammer"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Temple Maul"
+		ItemLevel < 38
+		
+	Show	
+		BaseType == "Leaden Greathammer"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Crumbling Maul"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Pointed Maul"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Oak Greathammer"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Forge Maul"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Totemic Greatclub"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Cultist Greathammer"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Greatmace"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Precise Greathammer"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Temple Maul"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Leaden Greathammer"
+		ItemLevel < 65
+		
+	Show	
+		BaseType == "Advanced Crumbling Maul"
+		ItemLevel < 67
+		
+	Show	
+		BaseType == "Giant Maul"
+		ItemLevel < 72
+		
+	
+	Show	
+		BaseType == "Makeshift Crossbow"
+		ItemLevel < 10
+		
+	Show	
+		BaseType == "Tense Crossbow"
+		ItemLevel < 16
+		
+	Show	
+		BaseType == "Sturdy Crossbow"
+		ItemLevel < 20
+		
+	Show	
+		BaseType == "Varnished Crossbow"
+		ItemLevel < 26
+		
+	Show	
+		BaseType == "Dyad Crossbow"
+		ItemLevel < 33
+		
+	Show	
+		BaseType == "Alloy Crossbow"
+		ItemLevel < 38
+		
+	Show	
+		BaseType == "Bombard Crossbow"
+		ItemLevel < 45
+		
+	Show	
+		BaseType == "Construct Crossbow"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Blackfire Crossbow"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Advanced Tense Crossbow"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Piercing Crossbow"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Advanced Sturdy Crossbow"
+		ItemLevel < 52
+		
+	Show	
+		BaseType == "Advanced Varnished Crossbow"
+		ItemLevel < 55
+		
+	Show	
+		BaseType == "Cumbrous Crossbow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Advanced Dyad Crossbow"
+		ItemLevel < 59
+		
+	Show	
+		BaseType == "Dedalian Crossbow"
+		ItemLevel < 62
+		
+	Show	
+		BaseType == "Advanced Bombard Crossbow"
+		ItemLevel < 65
+		
+	Show	
+		BaseType == "Advanced Forlorn Crossbow"
+		ItemLevel < 67
+		
+	Show	
+		BaseType == "Esoteric Crossbow"
+		ItemLevel < 72
+	
+	# Armor 
+	Show
+		BaseType == "Broadhead Quiver" "Splintered Tower Shield" "Painted Tower Shield" "Hardwood Targe" "Pelage Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Leather Buckler" "Wooden Buckler" "Twig Focus" "Woven Focus" "Antler Focus"  "Stocky Mitts" "Suede Bracers" "Torn Gloves" "Ringmail Gauntlets" "Rope Cuffs" "Gauze Wraps" "Rough Greaves" "Rawhide Boots" "Straw Sandals" "Mail Sabatons" "Padded Leggings" "Frayed Shoes" "Rusted Cuirass" "Fur Plate" "Leather Vest" "Quilted Vest" "Tattered Robe" "Feathered Robe" "Chain Mail" "Pilgrim Vestments" "Pelt Mantle" "Hermit Garb" "Rusted Greathelm" "Shabby Hood" "Felt Cap" "Twig Circlet" "Wicker Tiara" "Brimmed Helm" "Iron Crown" "Horned Crown" "Hewn Mask" "Face Mask" 
+		ItemLevel < 16
+
+	Show
+		BaseType == "Fire Quiver" "Braced Tower Shield" "Plated Buckler" "Riveted Mitts" "Firm Bracers" "Sombre Gloves" "Iron Greaves" "Laced Boots" "Wrapped Sandals" "Iron Cuirass" "Pathfinder Coat" "Hexer's Robe" "Rogue Armour" "Waxed Jacket" "Soldier Greathelm" "Lace Hood" "Guarded Helm"
+		ItemLevel < 26
+
+	Show
+		BaseType == "Sacral Quiver" "Barricade Tower Shield" "Effigial Tower Shield" "Studded Targe" "Emblem Crest Shield" "Iron Buckler" "Ridged Buckler" "Engraved Focus" "Tonal Focus"  "Tempered Mitts" "Bound Bracers" "Stitched Gloves" "Layered Gauntlets" "Aged Cuffs" "Linen Wraps" "Bronze Greaves" "Embossed Boots" "Lattice Sandals" "Braced Sabatons" "Secured Leggings" "Threaded Shoes" "Raider Plate" "Maraketh Cuirass" "Shrouded Vest" "Rhoahide Coat" "Bone Raiment" "Silk Robe" "Vagabond Armour" "Mail Vestments" "Marabout Garb" "Wrapped Greathelm" "Beaded Circlet" "Visored Helm" "Cultist Crown" "Hooded Mask" 
+		ItemLevel < 33
+
+	Show
+		BaseType == "Two-Point Quiver" "Rampart Tower Shield" "Crescent Targe" "Jingling Crest Shield" "Spiked Buckler" "Crystal Focus"  "Bolstered Mitts" "Sectioned Bracers" "Jewelled Gloves" "Trimmed Greaves" "Steeltoe Boots" "Silk Slippers" "Steel Plate" "Studded Vest" "Keth Raiment" "Cloaked Mail" "Shaman Mantle" "Wayfarer Jacket" "Spired Greathelm" "Swathed Cap" "Chain Tiara" "Cowled Helm" "Martyr Crown" "Veiled Mask" 
+		ItemLevel < 45
+
+	Show
+		BaseType == "Blunt Quiver" "Toxic Quiver" "Heraldric Tower Shield" "Stone Tower Shield" "Chiseled Targe" "Feathered Targe" "Sectarian Crest Shield" "Omen Crest Shield" "Ringed Buckler" "Edged Buckler" "Voodoo Focus" "Plumed Focus"  "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Vaal Cuirass" "Full Plate" "Scout's Vest" "Serpentscale Coat" "Votive Raiment" "Altar Robe" "Explorer Armour" "Scale Mail" "Ironclad Vestments" "Sacrificial Mantle" "Anchorite Garb" "Scalper's Jacket" "Elite Greathelm" "Warrior Greathelm" "Hunter Hood" "Viper Cap" "Feathered Tiara" "Gold Circlet" "Shielded Helm" "Heavy Crown" "Tribal Mask" 
+		ItemLevel < 51
+
+	Show
+		BaseType == "Serrated Quiver" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Laminate Buckler" "Pearl Buckler" "Advanced Painted Tower Shield" "Advanced Braced Tower Shield" "Advanced Hardwood Targe" "Advanced Pelage Targe" "Advanced Blazon Crest Shield" "Advanced Sigil Crest Shield" "Advanced Wooden Buckler" "Advanced Plated Buckler" "Advanced Woven Focus" "Advanced Antler Focus"  "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Diviner Cuffs" "Buckled Wraps" "Advanced Riveted Mitts" "Advanced Firm Bracers" "Advanced Sombre Gloves" "Advanced Ringmail Gauntlets" "Advanced Rope Cuffs" "Advanced Gauze Wraps" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Wrapped Sandals" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Frayed Shoes" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Scoundrel Jacket" "Advanced Fur Plate" "Advanced Iron Cuirass" "Advanced Quilted Vest" "Advanced Pathfinder Coat" "Advanced Feathered Robe" "Advanced Hexer's Robe" "Advanced Chain Mail" "Advanced Rogue Armour" "Advanced Pilgrim Vestments" "Advanced Pelt Mantle" "Advanced Hermit Garb" "Advanced Waxed Jacket" "Commander Greathelm" "Corsair Cap" "Coral Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Advanced Rusted Greathelm" "Advanced Soldier Greathelm" "Advanced Shabby Hood" "Advanced Felt Cap" "Advanced Twig Circlet" "Advanced Wicker Tiara" "Advanced Brimmed Helm" "Advanced Guarded Helm" "Advanced Iron Crown" "Advanced Horned Crown" "Advanced Hewn Mask" "Advanced Face Mask" 
+		ItemLevel < 59
+
+	Show
+		BaseType == "Primed Quiver" "Penetrating Quiver" "Phalanx Tower Shield" "Mosaic Targe" "Aureate Targe" "Stoic Crest Shield" "Empyreal Crest Shield" "Ornate Buckler" "Array Buckler" "Advanced Effigial Tower Shield" "Advanced Rampart Tower Shield" "Advanced Studded Targe" "Advanced Crescent Targe" "Advanced Emblem Crest Shield" "Advanced Jingling Crest Shield" "Advanced Ridged Buckler" "Advanced Spiked Buckler" "Advanced Tonal Focus" "Advanced Crystal Focus"  "Titan Mitts" "Hardened Bracers" "Embroidered Gloves" "Burnished Gauntlets" "Righteous Cuffs" "Furtive Wraps" "Advanced Bolstered Mitts" "Advanced Tempered Mitts" "Advanced Bound Bracers" "Advanced Sectioned Bracers" "Advanced Stitched Gloves" "Advanced Jewelled Gloves" "Advanced Layered Gauntlets" "Advanced Aged Cuffs" "Advanced Linen Wraps" "Monument Greaves" "Leatherplate Boots" "Studded Sandals" "Flexile Sabatons" "Gilt Leggings" "Velour Shoes" "Advanced Bronze Greaves" "Advanced Trimmed Greaves" "Advanced Embossed Boots" "Advanced Steeltoe Boots" "Advanced Lattice Sandals" "Advanced Silk Slippers" "Advanced Braced Sabatons" "Advanced Secured Leggings" "Advanced Threaded Shoes" "Colosseum Plate" "Champion Cuirass" "Strider Vest" "Hardleather Coat" "Imperial Robe" "Plated Raiment" "Lamellar Mail" "Gladiator Armour" "Tideseer Mantle" "Gilded Vestments" "Venerated Mantle" "Ascetic Garb" "Clandestine Jacket" "Monastic Garb" "Advanced Maraketh Cuirass" "Advanced Steel Plate" "Advanced Rhoahide Coat" "Advanced Studded Vest" "Advanced Silk Robe" "Advanced Keth Raiment" "Advanced Vagabond Armour" "Advanced Cloaked Mail" "Advanced Mail Vestments" "Advanced Shaman Mantle" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Leatherbound Hood" "Velvet Cap" "Covert Hood" "Noble Circlet" "Twilight Tiara" "Decorated Helm" "Lavish Crown" "Shaded Mask" "Advanced Wrapped Greathelm" "Advanced Spired Greathelm" "Advanced Lace Hood" "Advanced Swathed Cap" "Advanced Beaded Circlet" "Advanced Chain Tiara" "Advanced Visored Helm" "Advanced Cowled Helm" "Advanced Cultist Crown" "Advanced Martyr Crown" "Advanced Hooded Mask" "Advanced Veiled Mask" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask"  
+		ItemLevel < 70
+
+	Show
+		BaseType == "Volant Quiver" "Visceral Quiver" "Defiant Tower Shield" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Advanced Heraldric Tower Shield" "Advanced Stone Tower Shield" "Advanced Chiseled Targe" "Advanced Feathered Targe" "Advanced Sectarian Crest Shield" "Advanced Omen Crest Shield" "Advanced Ringed Buckler" "Advanced Edged Buckler" "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield" "Expert Plated Buckler" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus"  "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Advanced Moulded Mitts" "Advanced Spined Bracers" "Advanced Intricate Gloves" "Advanced Doubled Gauntlets" "Advanced Goldcast Cuffs" "Advanced Spiral Wraps" "Expert Riveted Mitts" "Expert Firm Bracers" "Expert Sombre Gloves" "Expert Ringmail Gauntlets" "Expert Rope Cuffs" "Expert Gauze Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Advanced Stone Greaves" "Advanced Lizardscale Boots" "Advanced Feathered Sandals" "Advanced Stacked Sabatons" "Advanced Pelt Leggings" "Advanced Hunting Shoes" "Expert Iron Greaves" "Expert Laced Boots" "Expert Wrapped Sandals" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Frayed Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Advanced Full Plate" "Advanced Vaal Cuirass" "Advanced Scout's Vest" "Advanced Serpentscale Coat" "Advanced Votive Raiment" "Advanced Altar Robe" "Advanced Explorer Armour" "Advanced Scale Mail" "Advanced Ironclad Vestments" "Advanced Sacrificial Mantle" "Advanced Anchorite Garb" "Advanced Scalper's Jacket" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Hexer's Robe" "Expert Rogue Armour" "Expert Pelt Mantle" "Expert Waxed Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Advanced Elite Greathelm" "Advanced Hunter Hood" "Advanced Feathered Tiara" "Advanced Shielded Helm" "Advanced Heavy Crown" "Advanced Tribal Mask" "Expert Soldier Greathelm" "Expert Felt Cap" 
+
+
+# Bad bases
+	Show
+		BaseType == "Crude Bow"
+		ItemLevel >= 11
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Shortbow"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Warden Bow"
+		ItemLevel >= 22
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Recurve Bow"
+		ItemLevel >= 28
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Composite Bow"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Dualstring Bow"
+		ItemLevel >= 39
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Cultist Bow"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Zealot Bow"
+		ItemLevel >= 50
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Artillery Bow"
+		ItemLevel >= 50
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Shortbow"
+		ItemLevel >= 50
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Warden Bow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Tribal Bow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Composite Bow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Greatbow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Dualstring Bow"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Double Limb Bow"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Cultist Bow"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Zealot Bow"
+		ItemLevel >= 67
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Heavy Bow"
+		ItemLevel >= 72
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Wrapped Quarterstaff"
+		ItemLevel >= 11
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Long Quarterstaff"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Gothic Quarterstaff"
+		ItemLevel >= 20
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Crackling Quarterstaff"
+		ItemLevel >= 28
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Crescent Quarterstaff"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Steelpoint Quarterstaff"
+		ItemLevel >= 37
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Slicing Quarterstaff"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Barrier Quarterstaff"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Hefty Quarterstaff"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Long Quarterstaff"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Smooth Quarterstaff"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Gothic Quarterstaff"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Crackling Quarterstaff"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Anima Quarterstaff"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Crescent Quarterstaff"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Graceful Quarterstaff"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Slicing Quarterstaff"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Barrier Quarterstaff"
+		ItemLevel >= 67
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Withered Wand"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Bone Wand"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Attuned Wand"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Siphoning Wand"
+		ItemLevel >= 25
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Volatile Wand"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Galvanic Wand"
+		ItemLevel >= 38
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Acrid Wand"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Offering Wand"
+		ItemLevel >= 49
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Frigid Wand"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Torture Wand"
+		ItemLevel >= 56
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Critical Wand"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Wooden Club"
+		ItemLevel >= 10
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Smithing Hammer"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Slim Mace"
+		ItemLevel >= 22
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Spiked Club"
+		ItemLevel >= 26
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Warpick"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Plated Mace"
+		ItemLevel >= 36
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Brigand Mace"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Construct Hammer"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Morning Star"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Smithing Hammer"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Jade Club"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Slim Mace"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Warpick"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Lumen Mace"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Execratus Hammer"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Plated Mace"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Brigand Mace"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Construct Hammer"
+		ItemLevel >= 67
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Torment Club"
+		ItemLevel >= 72
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Rattling Sceptre"
+		ItemLevel >= 12
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Stoic Sceptre"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Lupine Sceptre"
+		ItemLevel >= 21
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Omen Sceptre"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Ochre Sceptre"
+		ItemLevel >= 36
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Devouring Sceptre"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Clasped Sceptre"
+		ItemLevel >= 49
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Devotional Sceptre"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Wrath Sceptre"
+		ItemLevel >= 58
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Aromatic Sceptre"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	
+	Show
+		BaseType == "Ashen Staff"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Gelid Staff"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Voltaic Staff"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Spriggan Staff"
+		ItemLevel >= 25
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Pyrophyte Staff"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Chiming Staff"
+		ItemLevel >= 38
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Rending Staff"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Reaping Staff"
+		ItemLevel >= 49
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Icicle Staff"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Roaring Staff"
+		ItemLevel >= 56
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Paralysing Staff"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	
+	Show
+		BaseType == "Felled Greatclub"
+		ItemLevel >= 11
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Oak Greathammer"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Forge Maul"
+		ItemLevel >= 22
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Studded Greatclub"
+		ItemLevel >= 28
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Cultist Greathammer"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Temple Maul"
+		ItemLevel >= 38
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Leaden Greathammer"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Crumbling Maul"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Pointed Maul"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Oak Greathammer"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Forge Maul"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Totemic Greatclub"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Cultist Greathammer"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Greatmace"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Precise Greathammer"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Temple Maul"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Leaden Greathammer"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Crumbling Maul"
+		ItemLevel >= 67
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Giant Maul"
+		ItemLevel >= 72
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	
+	Show
+		BaseType == "Makeshift Crossbow"
+		ItemLevel >= 10
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Tense Crossbow"
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Sturdy Crossbow"
+		ItemLevel >= 20
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Varnished Crossbow"
+		ItemLevel >= 26
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Dyad Crossbow"
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Alloy Crossbow"
+		ItemLevel >= 38
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Bombard Crossbow"
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Construct Crossbow"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Blackfire Crossbow"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Tense Crossbow"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Piercing Crossbow"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Sturdy Crossbow"
+		ItemLevel >= 52
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Varnished Crossbow"
+		ItemLevel >= 55
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Cumbrous Crossbow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Dyad Crossbow"
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Dedalian Crossbow"
+		ItemLevel >= 62
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Bombard Crossbow"
+		ItemLevel >= 65
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Advanced Forlorn Crossbow"
+		ItemLevel >= 67
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+	Show
+		BaseType == "Esoteric Crossbow"
+		ItemLevel >= 72
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	# Armor 
+	Show
+		BaseType == "Broadhead Quiver" "Splintered Tower Shield" "Painted Tower Shield" "Hardwood Targe" "Pelage Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Leather Buckler" "Wooden Buckler" "Twig Focus" "Woven Focus" "Antler Focus"  "Stocky Mitts" "Suede Bracers" "Torn Gloves" "Ringmail Gauntlets" "Rope Cuffs" "Gauze Wraps" "Rough Greaves" "Rawhide Boots" "Straw Sandals" "Mail Sabatons" "Padded Leggings" "Frayed Shoes" "Rusted Cuirass" "Fur Plate" "Leather Vest" "Quilted Vest" "Tattered Robe" "Feathered Robe" "Chain Mail" "Pilgrim Vestments" "Pelt Mantle" "Hermit Garb" "Rusted Greathelm" "Shabby Hood" "Felt Cap" "Twig Circlet" "Wicker Tiara" "Brimmed Helm" "Iron Crown" "Horned Crown" "Hewn Mask" "Face Mask" 
+		ItemLevel >= 16
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Fire Quiver" "Braced Tower Shield" "Plated Buckler" "Riveted Mitts" "Firm Bracers" "Sombre Gloves" "Iron Greaves" "Laced Boots" "Wrapped Sandals" "Iron Cuirass" "Pathfinder Coat" "Hexer's Robe" "Rogue Armour" "Waxed Jacket" "Soldier Greathelm" "Lace Hood" "Guarded Helm"
+		ItemLevel >= 26
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Sacral Quiver" "Barricade Tower Shield" "Effigial Tower Shield" "Studded Targe" "Emblem Crest Shield" "Iron Buckler" "Ridged Buckler" "Engraved Focus" "Tonal Focus"  "Tempered Mitts" "Bound Bracers" "Stitched Gloves" "Layered Gauntlets" "Aged Cuffs" "Linen Wraps" "Bronze Greaves" "Embossed Boots" "Lattice Sandals" "Braced Sabatons" "Secured Leggings" "Threaded Shoes" "Raider Plate" "Maraketh Cuirass" "Shrouded Vest" "Rhoahide Coat" "Bone Raiment" "Silk Robe" "Vagabond Armour" "Mail Vestments" "Marabout Garb" "Wrapped Greathelm" "Beaded Circlet" "Visored Helm" "Cultist Crown" "Hooded Mask" 
+		ItemLevel >= 33
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Two-Point Quiver" "Rampart Tower Shield" "Crescent Targe" "Jingling Crest Shield" "Spiked Buckler" "Crystal Focus"  "Bolstered Mitts" "Sectioned Bracers" "Jewelled Gloves" "Trimmed Greaves" "Steeltoe Boots" "Silk Slippers" "Steel Plate" "Studded Vest" "Keth Raiment" "Cloaked Mail" "Shaman Mantle" "Wayfarer Jacket" "Spired Greathelm" "Swathed Cap" "Chain Tiara" "Cowled Helm" "Martyr Crown" "Veiled Mask" 
+		ItemLevel >= 45
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Blunt Quiver" "Toxic Quiver" "Heraldric Tower Shield" "Stone Tower Shield" "Chiseled Targe" "Feathered Targe" "Sectarian Crest Shield" "Omen Crest Shield" "Ringed Buckler" "Edged Buckler" "Voodoo Focus" "Plumed Focus"  "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Vaal Cuirass" "Full Plate" "Scout's Vest" "Serpentscale Coat" "Votive Raiment" "Altar Robe" "Explorer Armour" "Scale Mail" "Ironclad Vestments" "Sacrificial Mantle" "Anchorite Garb" "Scalper's Jacket" "Elite Greathelm" "Warrior Greathelm" "Hunter Hood" "Viper Cap" "Feathered Tiara" "Gold Circlet" "Shielded Helm" "Heavy Crown" "Tribal Mask" 
+		ItemLevel >= 51
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Serrated Quiver" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Laminate Buckler" "Pearl Buckler" "Advanced Painted Tower Shield" "Advanced Braced Tower Shield" "Advanced Hardwood Targe" "Advanced Pelage Targe" "Advanced Blazon Crest Shield" "Advanced Sigil Crest Shield" "Advanced Wooden Buckler" "Advanced Plated Buckler" "Advanced Woven Focus" "Advanced Antler Focus" "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Diviner Cuffs" "Buckled Wraps" "Advanced Riveted Mitts" "Advanced Firm Bracers" "Advanced Sombre Gloves" "Advanced Ringmail Gauntlets" "Advanced Rope Cuffs" "Advanced Gauze Wraps" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Wrapped Sandals" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Frayed Shoes" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Scoundrel Jacket" "Advanced Fur Plate" "Advanced Iron Cuirass" "Advanced Quilted Vest" "Advanced Pathfinder Coat" "Advanced Feathered Robe" "Advanced Hexer's Robe" "Advanced Chain Mail" "Advanced Rogue Armour" "Advanced Pilgrim Vestments" "Advanced Pelt Mantle" "Advanced Hermit Garb" "Advanced Waxed Jacket" "Commander Greathelm" "Corsair Cap" "Coral Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Advanced Rusted Greathelm" "Advanced Soldier Greathelm" "Advanced Shabby Hood" "Advanced Felt Cap" "Advanced Twig Circlet" "Advanced Wicker Tiara" "Advanced Brimmed Helm" "Advanced Guarded Helm" "Advanced Iron Crown" "Advanced Horned Crown" "Advanced Hewn Mask" "Advanced Face Mask" 
+		ItemLevel >= 59
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
+
+	Show
+		BaseType == "Primed Quiver" "Penetrating Quiver" "Phalanx Tower Shield" "Mosaic Targe" "Aureate Targe" "Stoic Crest Shield" "Empyreal Crest Shield" "Ornate Buckler" "Array Buckler" "Advanced Effigial Tower Shield" "Advanced Rampart Tower Shield" "Advanced Studded Targe" "Advanced Crescent Targe" "Advanced Emblem Crest Shield" "Advanced Jingling Crest Shield" "Advanced Ridged Buckler" "Advanced Spiked Buckler" "Advanced Tonal Focus" "Advanced Crystal Focus" "Titan Mitts" "Hardened Bracers" "Embroidered Gloves" "Burnished Gauntlets" "Righteous Cuffs" "Furtive Wraps" "Advanced Bolstered Mitts" "Advanced Tempered Mitts" "Advanced Bound Bracers" "Advanced Sectioned Bracers" "Advanced Stitched Gloves" "Advanced Jewelled Gloves" "Advanced Layered Gauntlets" "Advanced Aged Cuffs" "Advanced Linen Wraps" "Monument Greaves" "Leatherplate Boots" "Studded Sandals" "Flexile Sabatons" "Gilt Leggings" "Velour Shoes" "Advanced Bronze Greaves" "Advanced Trimmed Greaves" "Advanced Embossed Boots" "Advanced Steeltoe Boots" "Advanced Lattice Sandals" "Advanced Silk Slippers" "Advanced Braced Sabatons" "Advanced Secured Leggings" "Advanced Threaded Shoes" "Colosseum Plate" "Champion Cuirass" "Strider Vest" "Hardleather Coat" "Imperial Robe" "Plated Raiment" "Lamellar Mail" "Gladiator Armour" "Tideseer Mantle" "Gilded Vestments" "Venerated Mantle" "Ascetic Garb" "Clandestine Jacket" "Monastic Garb" "Advanced Maraketh Cuirass" "Advanced Steel Plate" "Advanced Rhoahide Coat" "Advanced Studded Vest" "Advanced Silk Robe" "Advanced Keth Raiment" "Advanced Vagabond Armour" "Advanced Cloaked Mail" "Advanced Mail Vestments" "Advanced Shaman Mantle" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Leatherbound Hood" "Velvet Cap" "Covert Hood" "Noble Circlet" "Twilight Tiara" "Decorated Helm" "Lavish Crown" "Shaded Mask" "Advanced Wrapped Greathelm" "Advanced Spired Greathelm" "Advanced Lace Hood" "Advanced Swathed Cap" "Advanced Beaded Circlet" "Advanced Chain Tiara" "Advanced Visored Helm" "Advanced Cowled Helm" "Advanced Cultist Crown" "Advanced Martyr Crown" "Advanced Hooded Mask" "Advanced Veiled Mask" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask"  
+		ItemLevel >= 70
+		SetFontSize 20
+		SetBackgroundColor 0 0 0 100
