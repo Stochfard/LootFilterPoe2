@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Stochfard's simple Loot Filter - for Path of Exile 2
 #===============================================================================================================
-# VERSION:  0.1.4.2024.12.08
+# VERSION:  0.1.5.2024.12.08
 # GAMEVERSION:  0.1.0
 # AUTHOR:   Stochfard
 
@@ -36,22 +36,32 @@
 		SetBackgroundColor 240 90 35
 		PlayAlertSound 1 300
 		PlayEffect White
-		MinimapIcon 1 White Circle
-		SetFontSize 40
+		MinimapIcon 2 White Circle
+		SetFontSize 45
 
 	Show
 		Class == "Currency"
 		BaseType == "Artificer's Orb" "Orb of Alchemy" "Vaal Orb" "Regal Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Arcanist's Etcher"  "Glassblower's Bauble" "Lesser Jeweller's Orb" "Breach Splinter" "Simulacrum Splinter"
-		SetFontSize 45
+		SetFontSize 40
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 249 150 25 255
 		PlayAlertSound 2 300
+		MinimapIcon 1 White Circle
+		PlayEffect White
+	
+	Show
+		Class == "Tablet"
+		SetTextColor 255 255 255 255
+		SetBorderColor 255 255 255 255
+		SetBackgroundColor 240 90 35
+		PlayAlertSound 1 300
 		PlayEffect White
 		MinimapIcon 2 White Circle
+		SetFontSize 45
 	
 
-	Show
+	Hide
 		Class == "Currency"
 		BaseType == "Scroll of Wisdom"
 		SetFontSize 20
@@ -86,7 +96,7 @@
 	Show
 		BaseType == "Uncut Skill Gem"
 		SetFontSize 40
-		ItemLevel > 15
+		ItemLevel > 14
 		SetTextColor 0 0 0 255
 		SetBorderColor 0 0 0 255
 		SetBackgroundColor 150 240 150 255
@@ -219,6 +229,17 @@
 		Class == "Currency"
 
     
+# Waystones
+	Show
+		BaseType "Expedition Logbook"
+		SetTextColor 255 255 255 255
+		SetBorderColor 200 0 255 255
+		SetBackgroundColor 170 0 220 180
+		PlayAlertSound 3 300
+		PlayEffect White
+		MinimapIcon 1 White Square
+		SetFontSize 40
+
 # Waystones
 	Show
 		BaseType "Waystone"
@@ -414,15 +435,6 @@
 	Show	
 		Sockets == "SS"
 		SetBorderColor 255 162 210 255
-
-
-	Show	
-		Quality >= 10
-		SetBorderColor 255 162 210 255
-
-	Show	
-		Quality >= 5
-		SetBorderColor 255 162 248 255
 
 	Show	
 		Quality >= 1
@@ -2059,819 +2071,819 @@
 		SetBorderColor 255 255 35
 
 # Second non rare bases 
-	Show	
+	Hide	
 		BaseType == "Crude Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 11
 		
-	Show	
+	Hide	
 		BaseType == "Shortbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Warden Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 22
 		
-	Show	
+	Hide	
 		BaseType == "Recurve Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 28
 		
-	Show	
+	Hide	
 		BaseType == "Composite Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Dualstring Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 39
 		
-	Show	
+	Hide	
 		BaseType == "Cultist Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Zealot Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 50
 		
-	Show	
+	Hide	
 		BaseType == "Artillery Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 50
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Shortbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 50
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Warden Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Tribal Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Composite Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Greatbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Dualstring Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Double Limb Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Cultist Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Zealot Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 67
 		
-	Show	
+	Hide	
 		BaseType == "Heavy Bow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 72
 		
 
-	Show	
+	Hide	
 		BaseType == "Wrapped Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 11
 		
-	Show	
+	Hide	
 		BaseType == "Long Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Gothic Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 20
 		
-	Show	
+	Hide	
 		BaseType == "Crackling Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 28
 		
-	Show	
+	Hide	
 		BaseType == "Crescent Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Steelpoint Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 37
 		
-	Show	
+	Hide	
 		BaseType == "Slicing Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Barrier Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Hefty Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Long Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Smooth Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Gothic Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Crackling Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Anima Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Crescent Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Graceful Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Slicing Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Barrier Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 67
 		
-	Show	
+	Hide	
 		BaseType == "Wyrm Quarterstaff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 72
 		
 	
-	Show	
+	Hide	
 		BaseType == "Withered Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Bone Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Attuned Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Siphoning Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 25
 		
-	Show	
+	Hide	
 		BaseType == "Volatile Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Galvanic Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 38
 		
-	Show	
+	Hide	
 		BaseType == "Acrid Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Offering Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 49
 		
-	Show	
+	Hide	
 		BaseType == "Frigid Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Torture Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 56
 		
-	Show	
+	Hide	
 		BaseType == "Critical Wand"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
 	
-	Show	
+	Hide	
 		BaseType == "Wooden Club"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 10
 		
-	Show	
+	Hide	
 		BaseType == "Smithing Hammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Slim Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 22
 		
-	Show	
+	Hide	
 		BaseType == "Spiked Club"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 26
 		
-	Show	
+	Hide	
 		BaseType == "Warpick"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Plated Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 36
 		
-	Show	
+	Hide	
 		BaseType == "Brigand Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Construct Hammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Morning Star"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Smithing Hammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Jade Club"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Slim Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Warpick"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Lumen Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Execratus Hammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Plated Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Brigand Mace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Construct Hammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 67
 		
-	Show	
+	Hide	
 		BaseType == "Torment Club"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 72
 		
 	
-	Show	
+	Hide	
 		BaseType == "Rattling Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 12
 		
-	Show	
+	Hide	
 		BaseType == "Stoic Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Lupine Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 21
 		
-	Show	
+	Hide	
 		BaseType == "Omen Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Ochre Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 36
 		
-	Show	
+	Hide	
 		BaseType == "Devouring Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Clasped Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 49
 		
-	Show	
+	Hide	
 		BaseType == "Devotional Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Wrath Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 58
 		
-	Show	
+	Hide	
 		BaseType == "Aromatic Sceptre"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
 	
-	Show	
+	Hide	
 		BaseType == "Ashen Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Gelid Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Voltaic Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Spriggan Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 25
 		
-	Show	
+	Hide	
 		BaseType == "Pyrophyte Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Chiming Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 38
 		
-	Show	
+	Hide	
 		BaseType == "Rending Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Reaping Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 49
 		
-	Show	
+	Hide	
 		BaseType == "Icicle Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Roaring Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 56
 		
-	Show	
+	Hide	
 		BaseType == "Paralysing Staff"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
 	
-	Show	
+	Hide	
 		BaseType == "Felled Greatclub"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 11
 		
-	Show	
+	Hide	
 		BaseType == "Oak Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Forge Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 22
 		
-	Show	
+	Hide	
 		BaseType == "Studded Greatclub"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 28
 		
-	Show	
+	Hide	
 		BaseType == "Cultist Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Temple Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 38
 		
-	Show	
+	Hide	
 		BaseType == "Leaden Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Crumbling Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Pointed Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Oak Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Forge Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Totemic Greatclub"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Cultist Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Greatmace"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Precise Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Temple Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Leaden Greathammer"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Crumbling Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 67
 		
-	Show	
+	Hide	
 		BaseType == "Giant Maul"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 72
 		
 	
-	Show	
+	Hide	
 		BaseType == "Makeshift Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 10
 		
-	Show	
+	Hide	
 		BaseType == "Tense Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 		
-	Show	
+	Hide	
 		BaseType == "Sturdy Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 20
 		
-	Show	
+	Hide	
 		BaseType == "Varnished Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 26
 		
-	Show	
+	Hide	
 		BaseType == "Dyad Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 		
-	Show	
+	Hide	
 		BaseType == "Alloy Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 38
 		
-	Show	
+	Hide	
 		BaseType == "Bombard Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 		
-	Show	
+	Hide	
 		BaseType == "Construct Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Blackfire Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Tense Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Piercing Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Sturdy Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 52
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Varnished Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 55
 		
-	Show	
+	Hide	
 		BaseType == "Cumbrous Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Dyad Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 		
-	Show	
+	Hide	
 		BaseType == "Dedalian Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 62
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Bombard Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 65
 		
-	Show	
+	Hide	
 		BaseType == "Advanced Forlorn Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 67
 		
-	Show	
+	Hide	
 		BaseType == "Esoteric Crossbow"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 72
 	
 	# Armor 
-	Show
+	Hide
 		BaseType == "Broadhead Quiver" "Splintered Tower Shield" "Painted Tower Shield" "Hardwood Targe" "Pelage Targe" "Blazon Crest Shield" "Sigil Crest Shield" "Leather Buckler" "Wooden Buckler" "Twig Focus" "Woven Focus" "Antler Focus"  "Stocky Mitts" "Suede Bracers" "Torn Gloves" "Ringmail Gauntlets" "Rope Cuffs" "Gauze Wraps" "Rough Greaves" "Rawhide Boots" "Straw Sandals" "Mail Sabatons" "Padded Leggings" "Frayed Shoes" "Rusted Cuirass" "Fur Plate" "Leather Vest" "Quilted Vest" "Tattered Robe" "Feathered Robe" "Chain Mail" "Pilgrim Vestments" "Pelt Mantle" "Hermit Garb" "Rusted Greathelm" "Shabby Hood" "Felt Cap" "Twig Circlet" "Wicker Tiara" "Brimmed Helm" "Iron Crown" "Horned Crown" "Hewn Mask" "Face Mask" 
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 16
 
-	Show
+	Hide
 		BaseType == "Fire Quiver" "Braced Tower Shield" "Plated Buckler" "Riveted Mitts" "Firm Bracers" "Sombre Gloves" "Iron Greaves" "Laced Boots" "Wrapped Sandals" "Iron Cuirass" "Pathfinder Coat" "Hexer's Robe" "Rogue Armour" "Waxed Jacket" "Soldier Greathelm" "Lace Hood" "Guarded Helm"
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 26
 
-	Show
+	Hide
 		BaseType == "Sacral Quiver" "Barricade Tower Shield" "Effigial Tower Shield" "Studded Targe" "Emblem Crest Shield" "Iron Buckler" "Ridged Buckler" "Engraved Focus" "Tonal Focus"  "Tempered Mitts" "Bound Bracers" "Stitched Gloves" "Layered Gauntlets" "Aged Cuffs" "Linen Wraps" "Bronze Greaves" "Embossed Boots" "Lattice Sandals" "Braced Sabatons" "Secured Leggings" "Threaded Shoes" "Raider Plate" "Maraketh Cuirass" "Shrouded Vest" "Rhoahide Coat" "Bone Raiment" "Silk Robe" "Vagabond Armour" "Mail Vestments" "Marabout Garb" "Wrapped Greathelm" "Beaded Circlet" "Visored Helm" "Cultist Crown" "Hooded Mask" 
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 33
 
-	Show
+	Hide
 		BaseType == "Two-Point Quiver" "Rampart Tower Shield" "Crescent Targe" "Jingling Crest Shield" "Spiked Buckler" "Crystal Focus"  "Bolstered Mitts" "Sectioned Bracers" "Jewelled Gloves" "Trimmed Greaves" "Steeltoe Boots" "Silk Slippers" "Steel Plate" "Studded Vest" "Keth Raiment" "Cloaked Mail" "Shaman Mantle" "Wayfarer Jacket" "Spired Greathelm" "Swathed Cap" "Chain Tiara" "Cowled Helm" "Martyr Crown" "Veiled Mask" 
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 45
 
-	Show
+	Hide
 		BaseType == "Blunt Quiver" "Toxic Quiver" "Heraldric Tower Shield" "Stone Tower Shield" "Chiseled Targe" "Feathered Targe" "Sectarian Crest Shield" "Omen Crest Shield" "Ringed Buckler" "Edged Buckler" "Voodoo Focus" "Plumed Focus"  "Moulded Mitts" "Spined Bracers" "Intricate Gloves" "Doubled Gauntlets" "Goldcast Cuffs" "Spiral Wraps" "Stone Greaves" "Lizardscale Boots" "Feathered Sandals" "Stacked Sabatons" "Pelt Leggings" "Hunting Shoes" "Vaal Cuirass" "Full Plate" "Scout's Vest" "Serpentscale Coat" "Votive Raiment" "Altar Robe" "Explorer Armour" "Scale Mail" "Ironclad Vestments" "Sacrificial Mantle" "Anchorite Garb" "Scalper's Jacket" "Elite Greathelm" "Warrior Greathelm" "Hunter Hood" "Viper Cap" "Feathered Tiara" "Gold Circlet" "Shielded Helm" "Heavy Crown" "Tribal Mask" 
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 51
 
-	Show
+	Hide
 		BaseType == "Serrated Quiver" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Laminate Buckler" "Pearl Buckler" "Advanced Painted Tower Shield" "Advanced Braced Tower Shield" "Advanced Hardwood Targe" "Advanced Pelage Targe" "Advanced Blazon Crest Shield" "Advanced Sigil Crest Shield" "Advanced Wooden Buckler" "Advanced Plated Buckler" "Advanced Woven Focus" "Advanced Antler Focus"  "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Diviner Cuffs" "Buckled Wraps" "Advanced Riveted Mitts" "Advanced Firm Bracers" "Advanced Sombre Gloves" "Advanced Ringmail Gauntlets" "Advanced Rope Cuffs" "Advanced Gauze Wraps" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Advanced Iron Greaves" "Advanced Laced Boots" "Advanced Wrapped Sandals" "Advanced Mail Sabatons" "Advanced Padded Leggings" "Advanced Frayed Shoes" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Scoundrel Jacket" "Advanced Fur Plate" "Advanced Iron Cuirass" "Advanced Quilted Vest" "Advanced Pathfinder Coat" "Advanced Feathered Robe" "Advanced Hexer's Robe" "Advanced Chain Mail" "Advanced Rogue Armour" "Advanced Pilgrim Vestments" "Advanced Pelt Mantle" "Advanced Hermit Garb" "Advanced Waxed Jacket" "Commander Greathelm" "Corsair Cap" "Coral Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Advanced Rusted Greathelm" "Advanced Soldier Greathelm" "Advanced Shabby Hood" "Advanced Felt Cap" "Advanced Twig Circlet" "Advanced Wicker Tiara" "Advanced Brimmed Helm" "Advanced Guarded Helm" "Advanced Iron Crown" "Advanced Horned Crown" "Advanced Hewn Mask" "Advanced Face Mask" 
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 59
 
-	Show
+	Hide
 		BaseType == "Primed Quiver" "Penetrating Quiver" "Phalanx Tower Shield" "Mosaic Targe" "Aureate Targe" "Stoic Crest Shield" "Empyreal Crest Shield" "Ornate Buckler" "Array Buckler" "Advanced Effigial Tower Shield" "Advanced Rampart Tower Shield" "Advanced Studded Targe" "Advanced Crescent Targe" "Advanced Emblem Crest Shield" "Advanced Jingling Crest Shield" "Advanced Ridged Buckler" "Advanced Spiked Buckler" "Advanced Tonal Focus" "Advanced Crystal Focus"  "Titan Mitts" "Hardened Bracers" "Embroidered Gloves" "Burnished Gauntlets" "Righteous Cuffs" "Furtive Wraps" "Advanced Bolstered Mitts" "Advanced Tempered Mitts" "Advanced Bound Bracers" "Advanced Sectioned Bracers" "Advanced Stitched Gloves" "Advanced Jewelled Gloves" "Advanced Layered Gauntlets" "Advanced Aged Cuffs" "Advanced Linen Wraps" "Monument Greaves" "Leatherplate Boots" "Studded Sandals" "Flexile Sabatons" "Gilt Leggings" "Velour Shoes" "Advanced Bronze Greaves" "Advanced Trimmed Greaves" "Advanced Embossed Boots" "Advanced Steeltoe Boots" "Advanced Lattice Sandals" "Advanced Silk Slippers" "Advanced Braced Sabatons" "Advanced Secured Leggings" "Advanced Threaded Shoes" "Colosseum Plate" "Champion Cuirass" "Strider Vest" "Hardleather Coat" "Imperial Robe" "Plated Raiment" "Lamellar Mail" "Gladiator Armour" "Tideseer Mantle" "Gilded Vestments" "Venerated Mantle" "Ascetic Garb" "Clandestine Jacket" "Monastic Garb" "Advanced Maraketh Cuirass" "Advanced Steel Plate" "Advanced Rhoahide Coat" "Advanced Studded Vest" "Advanced Silk Robe" "Advanced Keth Raiment" "Advanced Vagabond Armour" "Advanced Cloaked Mail" "Advanced Mail Vestments" "Advanced Shaman Mantle" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Fierce Greathelm" "Dueling Greathelm" "Goliath Greathelm" "Leatherbound Hood" "Velvet Cap" "Covert Hood" "Noble Circlet" "Twilight Tiara" "Decorated Helm" "Lavish Crown" "Shaded Mask" "Advanced Wrapped Greathelm" "Advanced Spired Greathelm" "Advanced Lace Hood" "Advanced Swathed Cap" "Advanced Beaded Circlet" "Advanced Chain Tiara" "Advanced Visored Helm" "Advanced Cowled Helm" "Advanced Cultist Crown" "Advanced Martyr Crown" "Advanced Hooded Mask" "Advanced Veiled Mask" "Expert Wicker Tiara" "Expert Guarded Helm" "Expert Horned Crown" "Expert Face Mask"  
 		Rarity = Normal Magic
 		SetFontSize 33
 		ItemLevel < 70
 
-	Show
+	Hide
 		BaseType == "Volant Quiver" "Visceral Quiver" "Defiant Tower Shield" "Blacksteel Tower Shield" "Grand Targe" "Deified Crest Shield" "Aegis Buckler" "Advanced Heraldric Tower Shield" "Advanced Stone Tower Shield" "Advanced Chiseled Targe" "Advanced Feathered Targe" "Advanced Sectarian Crest Shield" "Advanced Omen Crest Shield" "Advanced Ringed Buckler" "Advanced Edged Buckler" "Expert Braced Tower Shield" "Expert Pelage Targe" "Expert Sigil Crest Shield" "Expert Plated Buckler" "Advanced Voodoo Focus" "Advanced Plumed Focus" "Expert Antler Focus"  "Grand Mitts" "Engraved Bracers" "Adorned Gloves" "Ornate Gauntlets" "Signet Cuffs" "Utility Wraps" "Grand Manchettes" "Advanced Moulded Mitts" "Advanced Spined Bracers" "Advanced Intricate Gloves" "Advanced Doubled Gauntlets" "Advanced Goldcast Cuffs" "Advanced Spiral Wraps" "Expert Riveted Mitts" "Expert Firm Bracers" "Expert Sombre Gloves" "Expert Ringmail Gauntlets" "Expert Rope Cuffs" "Expert Gauze Wraps" "Totemic Greaves" "Embroidered Boots" "Elaborate Sandals" "Bold Sabatons" "Pious Leggings" "Bladed Shoes" "Grand Cuisses" "Advanced Stone Greaves" "Advanced Lizardscale Boots" "Advanced Feathered Sandals" "Advanced Stacked Sabatons" "Advanced Pelt Leggings" "Advanced Hunting Shoes" "Expert Iron Greaves" "Expert Laced Boots" "Expert Wrapped Sandals" "Expert Mail Sabatons" "Expert Padded Leggings" "Expert Frayed Shoes" "Glorious Plate" "Conqueror Plate" "Exquisite Vest" "Mail Coat" "Havoc Raiment" "Enlightened Robe" "Heroic Armour" "Tournament Mail" "Revered Vestments" "Corvus Mantle" "Torment Jacket" "Devout Garb" "Grand Regalia" "Advanced Full Plate" "Advanced Vaal Cuirass" "Advanced Scout's Vest" "Advanced Serpentscale Coat" "Advanced Votive Raiment" "Advanced Altar Robe" "Advanced Explorer Armour" "Advanced Scale Mail" "Advanced Ironclad Vestments" "Advanced Sacrificial Mantle" "Advanced Anchorite Garb" "Advanced Scalper's Jacket" "Expert Iron Cuirass" "Expert Pathfinder Coat" "Expert Hexer's Robe" "Expert Rogue Armour" "Expert Pelt Mantle" "Expert Waxed Jacket" "Guardian Greathelm" "Armoured Cap" "Magus Tiara" "Gallant Helm" "Templar Crown" "Death Mask" "Grand Visage" "Advanced Elite Greathelm" "Advanced Hunter Hood" "Advanced Feathered Tiara" "Advanced Shielded Helm" "Advanced Heavy Crown" "Advanced Tribal Mask" "Expert Soldier Greathelm" "Expert Felt Cap" 
 		Rarity = Normal Magic
 		SetFontSize 33
